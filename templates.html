@@ -9,6 +9,16 @@
     <link rel="stylesheet" href="project.css">
 </head>
 <body>
+    <!-- Form Section -->
+    <form id="myForm" onsubmit="return validateForm()">
+        <label for="email">Join our monthly subscription for updates!</label>
+        <input type="text" id="email" placeholder="Enter your email">
+        <input type="submit" value="Submit">
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Optional, for jQuery features -->
+    <script src="script.js"></script>
+
     <!-- Header Section -->
     <header class="main-header">
         <h1 class="site-title">Resume Builder</h1>
