@@ -163,5 +163,112 @@ footer a:hover {
     height: 150px; 
     object-fit: cover; 
 }
+/* Table Styling */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse; /* Ensures table borders are merged */
+}
+
+table caption {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left; /* Aligns text to the left */
+    border: 1px solid #ccc; /* Adds a border between cells */
+}
+
+th {
+    background-color: #007BFF;
+    color: white; /* White text for the table header */
+    font-size: 1.2rem;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(even) td {
+    background-color: #f2f2f2; /* Zebra striping for even rows */
+}
+
+tr:hover td {
+    background-color: #e0e0e0; /* Highlights rows on hover */
+}
+
+/* Main Resume Layout Container */
+.resume-layout {
+    border: 2px solid #ccc; /* Light gray border */
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 900px;
+    background-color: #fff; /* White background to simulate a page */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+/* Header Section of Resume */
+.resume-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.resume-name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.resume-contact {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Resume Sections */
+.resume-section {
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    color: #007BFF;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.section-content, .job-company, .skills-list {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.job-entry {
+    margin-bottom: 20px;
+}
+
+.job-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.job-responsibilities {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skills-list li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
 
 

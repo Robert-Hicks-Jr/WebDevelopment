@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop for the best products at amazing prices.">
+    <title>Shop - Resume Builder</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Resume Builder Shop</h1>
+        <nav>
+            <a href="features.html" class="nav-link">Features</a>
+            <a href="#steps" class="nav-link">Steps</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="example.html" class="nav-link">Example Resume</a>
+            <a href="faq.html" class="nav-link">FAQ</a>
+        </nav>
+    </header>
+
+    <!-- Main Product Section -->
+    <main>
+        <h2>Shop Our Exclusive Templates</h2>
+        <p>Browse through our premium resume templates and get started on creating your perfect resume.</p>
+
+        <!-- Product Grid -->
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product">
+                <img src="images/ResumeTemplate.jpg" alt="Resume Template 1">
+                <h3>Professional Resume Template</h3>
+                <p>$19.99</p>
+                <button class="cta-btn">Add to Cart</button>
+                <br>
+            </div>
+            <!-- Product 2 -->
+            <div class="product">
+                <img src="images/ResumeTemplate2.jpg" alt="Resume Template 2">
+                <h3>Modern Resume Template</h3>
+                <p>$24.99</p>
+                <button class="cta-btn">Add to Cart</button>
+                <br>
+            </div>
+            <!-- Product 3 -->
+            <div class="product">
+                <img src="images/ResumeTemplate3.jpg" alt="Resume Template 3">
+                <h3>Creative Resume Template</h3>
+                <p>$29.99</p>
+                <button class="cta-btn">Add to Cart</button>
+                <br>
+            </div>
+        </div>
+
+        <!-- Cart Section -->
+        <div class="cart-section">
+            <h3>Your Cart</h3>
+            <p>Items: 0</p>
+            <p>Total: $0.00</p>
+            <button class="cta-btn">Checkout</button>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Contact us: <a href="mailto:ProfessionalResumeBuilder@gmail.com">ProfessionalResumeBuilder@gmail.com</a></p>
+        <p>&copy; 2024 Resume Builder Shop. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://facebook.com"><img src="images/facebook.jpg" alt="Facebook logo" class="social-icon"></a>
+            <a href="https://twitter.com"><img src="images/twittericon.png" alt="Twitter logo" class="social-icon"></a>
+            <a href="https://instagram.com"><img src="images/instagram.jpg" alt="Instagram logo" class="social-icon"></a>
+        </div>
+    </footer>
+
+    <script>
+        let cartItems = 0;
+        let totalPrice = 0;
+
+        document.querySelectorAll('.cta-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                cartItems++;
+                totalPrice += 19.99; // Placeholder value for each item
+                document.querySelector('.cart-section p:nth-of-type(1)').textContent = `Items: ${cartItems}`;
+                document.querySelector('.cart-section p:nth-of-type(2)').textContent = `Total: $${totalPrice.toFixed(2)}`;
+            });
+        });
+    </script>
+</body>
+</html>

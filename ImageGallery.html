@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View a beautiful image gallery showcasing resume builder templates and designs.">
+    <title>Resume Builder - Image Gallery</title>
+    <link rel="stylesheet" href="project.css">
+    <style>
+        /* Image Gallery Styles */
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            padding: 10px;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .gallery-container {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="main-header">
+        <h1 class="site-title">Resume Builder</h1>
+        <nav class="main-nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="features.html" class="nav-link">Features</a>
+            <a href="templates.html" class="nav-link">Templates</a>
+            <a href="example.html" class="nav-link">Example Resume</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="store.html" class="nav-link">Store</a>
+            <a href="faq.html" class="nav-link">FAQ</a>
+            <br>
+            <a href="privacy-policy.html" class="nav-link">Privacy Policy</a>
+        </nav>
+    </header>
+
+    <!-- Main Image Gallery Section -->
+    <main class="image-gallery">
+        <h2 class="section-title">Image Gallery</h2>
+        <p class="gallery-description">Explore our collection of resume templates and designs.</p>
+
+        <!-- Image Gallery -->
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="images/ResumeTemplate.jpg" alt="Resume Template 1">
+                <div class="gallery-caption">Modern Professional</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/ResumeTemplate2.jpg" alt="Resume Template 2">
+                <div class="gallery-caption">Creative Design</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/ResumeTemplate3.jpg" alt="Resume Template 3">
+                <div class="gallery-caption">Minimalist Style</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/EmptyResume.png" alt="Resume Template 4">
+                <div class="gallery-caption">Corporate Resume</div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <p class="footer-text">Contact us: <a href="mailto:info@resumebuilder.com" class="footer-link">info@resumebuilder.com</a></p>
+        <p class="footer-text">&copy; 2024 Resume Builder. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="images/facebook.jpg"><img src="images/facebook.jpg" alt="Facebook" class="social-icon"></a>
+            <a href="images/twittericon.png"><img src="images/twittericon.png" alt="Twitter" class="social-icon"></a>
+            <a href="images/instagram.jpg"><img src="images/instagram.jpg" alt="Instagram" class="social-icon"></a>
+        </div>
+    </footer>
+
+</body>
+</html>
